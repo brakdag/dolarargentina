@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\Gustavo\\.windows-build-tools\\python27\\python.exe"
+    "python.pythonPath": "C:\\Users\\Gustavo\\.windows-build-tools\\python27\\python.exe",
+    "python.linting.enabled": false
 }

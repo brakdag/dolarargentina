@@ -21,6 +21,9 @@ describe('Pruebas de funciones', function() {
     it('Banco Nación',async function() {console.log(await dol.getDolarHoy("bna"))});
     it('Banco Patagonia',async function() {console.log(await dol.getDolarHoy("patagonia"))});
     it('Montemar',async function() {console.log(await dol.getDolarHoy("montemar"))});
+    it('Santander Rio',async function() {console.log(await dol.getDolarHoy("santanderrio"))});
+    it('Banco Provincia',async function() {console.log(await dol.getDolarHoy("provincia"))});
+   // it('Banco Hipotecario',async function() {console.log(await dol.getDolarHoy("hipotecario"))});
     
    });
 });
