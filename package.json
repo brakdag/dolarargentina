@@ -24,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/brakdag/dolarargentina/issues"
   },
-  "homepage": "https://github.com/brakdag/dolarargentina#readme"
+  "homepage": "https://github.com/brakdag/dolarargentina#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "html-table-to-json": "^0.2.1",
+    "node-fetch": "^2.1.2"
+  }
 }
