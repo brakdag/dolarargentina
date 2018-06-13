@@ -14,8 +14,13 @@ describe('Pruebas de funciones', function() {
     describe('Función de fecha', function() {
        it('Convertir fecha a cadena ceros',function() {console.log(dol.getUrifromDate(1,1,2003));});
        it('Convertir fecha a cadena sin ceros',function() {console.log(dol.getUrifromDate(11,11,2003));});
-       it('obtener fecha actual',async function() {console.log(await dol.getDolarHoy());
     });
-       
-    });    
+   describe('Probando Bancos', function(){
+    this.timeout(15000);
+    it('Banco Galicia',async function() {console.log(await dol.getDolarHoy("galicia"))});
+    it('Banco Nación',async function() {console.log(await dol.getDolarHoy("bna"))});
+    it('Banco Patagonia',async function() {console.log(await dol.getDolarHoy("patagonia"))});
+    it('Montemar',async function() {console.log(await dol.getDolarHoy("montemar"))});
+    
+   });
 });
