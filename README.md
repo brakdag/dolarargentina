@@ -1,12 +1,16 @@
-# dolarargentina
-Cotizaciones del dolar en argentina diferentes fuentes
+# Dolar Argentina
+Values of Dolar in Argentinian Pesos.
 
-# usage
+# Usage
+
 ```javascript
 const dolar = require("../lib/index");
+
 console.log(await dol.getDolarHoy("galicia"));
+
+
 ```
-# Cotizaciones de bancos de argentina del donar online.
+# Bank Aliases.
 
 |banco|alias|
 |-----|------|
@@ -16,3 +20,12 @@ console.log(await dol.getDolarHoy("galicia"));
 |Montemar'|"montemar"|
 |Santander Rio'|"santanderrio"|
 |Banco Provincia |"provincia"|
+
+# test
+Test are using mocha, you need installed mocha in your system.
+The test includen check of all sources of information from others webs.
+```bash
+npm i mocha -g
+npm test
+```
+
