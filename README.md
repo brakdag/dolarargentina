@@ -21,9 +21,10 @@ console.log(await dol.getDolarHoy("galicia"));
 |Santander Rio'|"santanderrio"|
 |Banco Provincia |"provincia"|
 
-# test
-Test are using mocha, you need installed mocha in your system.
+# Test
+Test unitaries are using mocha, you need installed mocha in your system.
 The test includen check of all sources of information from others webs.
+the test are in the folder ./tests/test.js
 ```bash
 npm i mocha -g
 npm test
