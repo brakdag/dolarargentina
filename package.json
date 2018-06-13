@@ -1,0 +1,28 @@
+{
+  "name": "dolarargentina",
+  "version": "1.0.0",
+  "description": "obtener cotizaciones del dolar en argentina",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brakdag/dolarargentina.git"
+  },
+  "keywords": [
+    "dolar",
+    "argentina",
+    "cotizaciones"
+  ],
+  "author": "brakdag@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brakdag/dolarargentina/issues"
+  },
+  "homepage": "https://github.com/brakdag/dolarargentina#readme"
+}
