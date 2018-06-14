@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "example": "node ./examples/example01.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/brakdag/dolarargentina#readme",
   "dependencies": {
+    "async": "^2.6.1",
     "cheerio": "^1.0.0-rc.2",
     "html-table-to-json": "^0.2.1",
     "node-fetch": "^2.1.2"
