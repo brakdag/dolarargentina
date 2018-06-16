@@ -7,9 +7,17 @@ Values of Dolar in Argentinian Pesos.
 const dolar = require("../lib/index");
 
 console.log(await dol.getDolarHoy("galicia"));
-
-
 ```
+
+# Running Web Server
+
+```bash
+npm install
+npm start
+Aplicación Dolar Argentian corriendo en - http://localhost:8080
+```
+
+
 # Bank Aliases.
 
 |banco|alias|
