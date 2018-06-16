@@ -14,7 +14,7 @@ console.log(await dol.getDolarHoy("galicia"));
 ```bash
 npm install
 npm start
-Aplicación Dolar Argentian corriendo en - http://localhost:8080
+Aplicación dolar en Argentina corriendo en - http://localhost:8080
 ```
 
 
