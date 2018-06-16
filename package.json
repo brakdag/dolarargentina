@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "example": "node ./examples/example01.js"
+    "example": "node ./examples/example01.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   "dependencies": {
     "async": "^2.6.1",
     "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
     "html-table-to-json": "^0.2.1",
     "node-fetch": "^2.1.2"
   }

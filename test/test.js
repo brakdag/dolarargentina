@@ -9,9 +9,14 @@ it('Bancos Cargados:', function() {
 });
 
 describe("Bancos", function(){
+    this.timeout(15000);
     it(dol.bank["galicia"].name,async function() {console.log(await dol.getDolarHoy("galicia"))});
     it(dol.bank["montemar"].name,async function() {console.log(await dol.getDolarHoy("montemar"))});
     it(dol.bank["provincia"].name,async function() {console.log(await dol.getDolarHoy("provincia"))});
+    it(dol.bank["patagonia"].name,async function() {console.log(await dol.getDolarHoy("patagonia"))});
+    it(dol.bank["santanderrio"].name,async function() {console.log(await dol.getDolarHoy("santanderrio"))});
+    //it(dol.bank["bna"].name,async function() {console.log(await dol.getDolarHoy("bna"))});
+    
     
 });
 
