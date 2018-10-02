@@ -1,11 +1,10 @@
 # Dolar Argentina
-Values of Dolar in Argentinian Pesos.
+Values of Dolar in Argentinian Pesos, scraped from original websites banks.
 
 # Usage
 
 ```javascript
 const dolar = require("../lib/index");
-
 console.log(await dol.getDolarHoy("galicia"));
 ```
 

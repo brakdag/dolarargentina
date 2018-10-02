@@ -29,4 +29,8 @@ app.get('/data', function(req, res,next) {
   respuestas.push(await dol.getDolarHoy("santanderrio"));
   respuestas.push(await dol.getDolarHoy("montemar"));
   respuestas.push(await dol.getDolarHoy("provincia"));
+  respuestas.push(await dol.getDolarHoy("patagonia"));
+  respuestas.push(await dol.getDolarHoy("bna"));
+
+  
 })();
