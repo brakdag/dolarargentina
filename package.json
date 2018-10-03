@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/brakdag/dolarargentina#readme",
   "dependencies": {
-    "async": "^2.6.1",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "request": "^2.88.0"
   }
 }
