@@ -36,4 +36,5 @@ the test are in the folder ./tests/test.js
 npm i mocha -g
 npm test
 ```
-
+#License
+MIT
