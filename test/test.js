@@ -2,41 +2,21 @@ const assert = require("assert");
 const dolar = require("../lib/index");
 const async = require("async");
 var dol = new dolar;
-var list = dol.getBanklist();
-it('Bancos Cargados:', function() {
-    this.timeout(15000);
-    console.log( list);
-});
+
 
 describe("Bancos", function(){
     this.timeout(15000);
+ /*   it('Bancos Cargados:', function() {
+        var list = dol.getBanklist();
+        console.log( list);
+    });
     it(dol.bank["galicia"].name,async function() {console.log(await dol.getDolarHoy("galicia"))});
     it(dol.bank["montemar"].name,async function() {console.log(await dol.getDolarHoy("montemar"))});
     it(dol.bank["provincia"].name,async function() {console.log(await dol.getDolarHoy("provincia"))});
     it(dol.bank["patagonia"].name,async function() {console.log(await dol.getDolarHoy("patagonia"))});
     it(dol.bank["santanderrio"].name,async function() {console.log(await dol.getDolarHoy("santanderrio"))});
-    //it(dol.bank["bna"].name,async function() {console.log(await dol.getDolarHoy("bna"))});
-    
-    
-});
-
-/*describe('Pruebas Unitarias DolarArgentina', function() {
-    this.timeout(15000);
-    describe('Modulo Cargado', function() {
-    it('Creando instancia de la clase,', function() {
-        assert.equal(dol.test(), true);
-    });
-    it('Bancos Cargados:', function() {
-         console.log(dol.getBanklist().length);
-    });
-
-  });
-});
-
-describe('Pruebas de funciones', function() {
-/*    describe('Función de fecha', function() {
-       it('Convertir fecha a cadena ceros',function() {console.log(dol.getUrifromDate(1,1,2003));});
-       it('Convertir fecha a cadena sin ceros',function() {console.log(dol.getUrifromDate(11,11,2003));});
-    });*/
+   */ it(dol.bank["santanderrio"].name,dol.getDolarHoy("santanderrio").then((resp)=>console.log(resp)));
   
-//});
+    
+    //it(dol.bank["bna"].name,async function() {console.log(await dol.getDolarHoy("bna"))});
+});
