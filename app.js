@@ -1,6 +1,6 @@
 const express = require('express')
-, app = express()
-, server = require('http').createServer(app)
+  , app = express()
+  , server = require('http').createServer(app)
 var dolar = require("./lib/index");
 var dol = new dolar;
 var respuestas = []
@@ -10,27 +10,28 @@ var respuestas = []
 
 
 app.use(express.static(__dirname + '/public'));
-server.listen(8080, ()=> {
+server.listen(8080, () => {
   console.log('Aplicación Dolar Argentian corriendo en - http://localhost:8080');
-});  
+});
 /*****************************************************
  *                    ROUTES                         *
  ****************************************************/
-app.get('/', function(req, res,next) {  
+app.get('/', function (req, res, next) {
   res.sendFile(__dirname + '/public/views/index.html');
 });
 
-app.get('/data', function(req, res,next) {
-  res.setHeader('Content-Type', 'application/json');
-  res.send(JSON.stringify(respuestas, null, 3));
+app.get('/data', function (req, res, next) {
+  bancos = dol.getBanklist;
+  bancos.forEach(banco =>
+    dol.getDolarHoy(banco).then((resp) => {
+      respuestas.push(resp)
+      res.setHeader('Content-Type', 'application/json');
+      res.send(JSON.stringify(respuestas, null, 3));
+    }));
+
 });
 
-(async function (){
-  respuestas.push(await dol.getDolarHoy("santanderrio"));
-  respuestas.push(await dol.getDolarHoy("montemar"));
-  respuestas.push(await dol.getDolarHoy("provincia"));
-  respuestas.push(await dol.getDolarHoy("patagonia"));
-  respuestas.push(await dol.getDolarHoy("bna"));
+(async function () {
 
-  
+
 })();
