@@ -1,6 +1,6 @@
 {
   "name": "dolarargentina",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "obtener cotizaciones del dolar en argentina",
   "main": "index.js",
   "directories": {
