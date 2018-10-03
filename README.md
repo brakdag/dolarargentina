@@ -38,3 +38,9 @@ npm test
 ```
 #License
 MIT
+
+#TODO
+
+* Agregar más bancos.
+* Agregar información banco central.
+* Controlar mejor los errores.
