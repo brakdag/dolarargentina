@@ -11,8 +11,7 @@
     "test": "mocha",
     "example": "node ./examples/example01.js",
     "start": "node app.js",
-    "build": "npm install"
-
+    "build": ""
   },
   "repository": {
     "type": "git",
