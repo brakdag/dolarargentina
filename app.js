@@ -9,10 +9,8 @@ var respuestas = []
  ****************************************************/
 
 
-app.use(express.static(__dirname + '/public'));
-
 server.listen(80, () => {
-  console.log('Aplicación Dolar Argentian corriendo en - http://localhost:8080');
+  console.log('Aplicación Dolar Argentian corriendo en - http://localhost:80');
 });
 /*****************************************************
  *                    ROUTES                         *

@@ -10,7 +10,9 @@
   "scripts": {
     "test": "mocha",
     "example": "node ./examples/example01.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "npm install"
+
   },
   "repository": {
     "type": "git",
