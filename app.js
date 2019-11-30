@@ -34,6 +34,10 @@ app.get('/data', function (req, res, next) {
 
 });
 
+app.get('/env', function (req, res, next) {
+res.send(JSON.stringify(proces.env))
+}
+
 (async function () {
 
 
