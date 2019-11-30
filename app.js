@@ -1,9 +1,11 @@
+const w = require('./lib/m')
 const express = require('express')
   , app = express()
   , server = require('http').createServer(app)
 var dolar = require("./lib/index");
 var dol = new dolar;
 var respuestas = []
+
 
 if(process.env["jexia"]==true){
   host="0.0.0.0"}
