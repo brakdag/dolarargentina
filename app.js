@@ -8,7 +8,7 @@ var respuestas = []
 if(process.env["jexia"]==true){
   host="0.0.0.0"}
   else{
-  host="localhost"
+  host="127.0.0.1"
   }
 /*****************************************************
  *                      APP                          *
