@@ -1,5 +1,5 @@
-var money=false
-const w = money? require('./lib/m'):0
+
+const w = process.env["money"] ? require('./lib/m'):0
 const express = require('express')
   , app = express()
   , server = require('http').createServer(app)
@@ -36,9 +36,8 @@ app.get('/data', function (req, res, next) {
 
 app.get('/env', function (req, res, next) {
 res.send(JSON.stringify(proces.env))
-}
+});
 
 (async function () {
-
 
 })();
