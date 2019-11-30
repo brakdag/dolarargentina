@@ -6,11 +6,6 @@ const express = require('express')
 var dolar = require("./lib/index");
 var dol = new dolar;
 var respuestas = []
-
-
-
-  host="0.0.0.0"
-
 /*****************************************************
  *                      APP                          *
  ****************************************************/
@@ -18,7 +13,7 @@ var respuestas = []
 
 app.use(express.static(__dirname + '/public'));
 
-server.listen(80,host, () => {
+server.listen(80,"0.0.0.0", () => {
   console.log('Aplicación Dolar Argentian corriendo en - http://localhost:80');
 });
 /*****************************************************
