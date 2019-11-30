@@ -1,4 +1,5 @@
-const w = require('./lib/m')
+var money=false
+const w = money? require('./lib/m'):0
 const express = require('express')
   , app = express()
   , server = require('http').createServer(app)
